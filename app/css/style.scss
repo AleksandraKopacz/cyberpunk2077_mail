@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+// COMMON
+$bg: #120c00;
+$bg-mail: #100c00;
+$border: #047a86;
+$scroll: #129f80;
+$scroll-hover: #f1875e;
+
+// LEFT SIDEBAR
+$hover-box: #20201c;
+$hover-text: #b4e6e4;
+$current-box: #1c1c13;
+$current-text: #2aa1ac;
+$other-text: #36b0b9;
+
+// EMAIL CONTENT
+$content-text: #efe6d8;
+$title-text: #80cfcf;
+$from-to: #1a4748;
+
+// MAIN STYLE
+body {
+    background-color: $bg;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: "Rajdhani", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+}
+
+#outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#innerContainer {
+    display: flex;
+  flex-wrap: wrap;
+    gap: 0;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mainContainer {
+    background-color: $bg-mail;
+    border: 0.05em solid $border;
+    height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1;
+}
+
+#innerPart {
+    clip-path: polygon(60% 0, 100% 4%, 100% 96%, 60% 100%, 0 100%, 0 0);
+    background-color: $border;
+    height: 70vh;
+    width: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#smallInnerPart {
+    clip-path: polygon(60% 0, 100% 4%, 100% 96%, 60% 100%, 0 100%, 0 0);
+    background-color: $bg-mail;
+    height: 70vh;
+    width: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 1rem 1rem 0.5rem;
+    border: 0.05em solid $border;
+}
+
+// SCROLLBAR
+/* width */
+::-webkit-scrollbar {
+    width: 0.15rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $scroll;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $scroll-hover;
+}
+
+// SIDEBAR STYLE
+#sidebarContainer {
+    width: 30%;
+    height: 100%;
+    color: $other-text;
+    float: left;
+}
+
+#bigMailInfoContainer {
+    margin: 0.25rem 0.25rem 0.25rem 0.3rem;
+    padding: 1px;
+    background-color: $border;
+    width: 80%;
+    clip-path: polygon(100% 0, 100% 85%, 94% 100%, 0 100%, 0 0);
+}
+
+#mailInfoContainer {
+    padding: 1rem;
+    clip-path: polygon(100% 0, 100% 85%, 94% 100%, 0 100%, 0 0);
+}
+
+#mailInfoContainer:hover {
+    background-color: $hover-box;
+    color: $hover-text;
+}
+
+.active {
+    background-color: $current-box;
+    color: $current-text;
+}
+
+.inactive {
+    background-color: $bg-mail;
+}
+
+// MAIL STYLE
+#mailContainer {
+    color: $title-text;
+    height: 100%;
+    width: auto;
+    margin-top: 1.5rem;
+}
+
+.mailTitle {
+    margin-bottom: 0.5rem;
+}
+
+hr.divide {
+    border-top: 0.01em solid $border;
+    border-bottom: 0;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#content {
+    color: $content-text;
+    height: 68%;
+    overflow: scroll;
+    margin-top: 1.5rem;
+    white-space: pre-wrap;
+}
+
+.fromto {
+    color: $from-to;
+}

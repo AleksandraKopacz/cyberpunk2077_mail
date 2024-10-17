@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+body {
+  background-color: #120c00;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: "Rajdhani", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+html {
+  height: 100%;
+}
+
+#outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#innerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mainContainer {
+  background-color: #100c00;
+  border: 0.05em solid #047a86;
+  height: 70vh;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1;
+}
+
+#innerPart {
+  -webkit-clip-path: polygon(60% 0, 100% 4%, 100% 96%, 60% 100%, 0 100%, 0 0);
+          clip-path: polygon(60% 0, 100% 4%, 100% 96%, 60% 100%, 0 100%, 0 0);
+  background-color: #047a86;
+  height: 70vh;
+  width: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#smallInnerPart {
+  -webkit-clip-path: polygon(60% 0, 100% 4%, 100% 96%, 60% 100%, 0 100%, 0 0);
+          clip-path: polygon(60% 0, 100% 4%, 100% 96%, 60% 100%, 0 100%, 0 0);
+  background-color: #100c00;
+  height: 70vh;
+  width: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 1rem 1rem 0.5rem;
+  border: 0.05em solid #047a86;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.15rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #129f80;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f1875e;
+}
+
+#sidebarContainer {
+  width: 30%;
+  height: 100%;
+  color: #36b0b9;
+  float: left;
+}
+
+#bigMailInfoContainer {
+  margin: 0.25rem 0.25rem 0.25rem 0.3rem;
+  padding: 1px;
+  background-color: #047a86;
+  width: 80%;
+  -webkit-clip-path: polygon(100% 0, 100% 85%, 94% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 85%, 94% 100%, 0 100%, 0 0);
+}
+
+#mailInfoContainer {
+  padding: 1rem;
+  -webkit-clip-path: polygon(100% 0, 100% 85%, 94% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 85%, 94% 100%, 0 100%, 0 0);
+}
+
+#mailInfoContainer:hover {
+  background-color: #20201c;
+  color: #b4e6e4;
+}
+
+.active {
+  background-color: #1c1c13;
+  color: #2aa1ac;
+}
+
+.inactive {
+  background-color: #100c00;
+}
+
+#mailContainer {
+  color: #80cfcf;
+  height: 100%;
+  width: auto;
+  margin-top: 1.5rem;
+}
+
+.mailTitle {
+  margin-bottom: 0.5rem;
+}
+
+hr.divide {
+  border-top: 0.01em solid #047a86;
+  border-bottom: 0;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+#content {
+  color: #efe6d8;
+  height: 68%;
+  overflow: scroll;
+  margin-top: 1.5rem;
+  white-space: pre-wrap;
+}
+
+.fromto {
+  color: #1a4748;
+}/*# sourceMappingURL=style.css.map */
