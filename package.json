@@ -11,6 +11,7 @@
   "dependencies": {
     "@fluentui/react-components": "^9.54.17",
     "@fluentui/react-divider": "^9.2.75",
+    "@uidotdev/usehooks": "^2.4.1",
     "boxicons": "^2.1.4",
     "next": "14.2.14",
     "react": "^18",

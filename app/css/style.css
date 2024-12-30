@@ -82,6 +82,52 @@ html {
   background: #f1875e;
 }
 
+#contactsContainer {
+  width: 100%;
+  height: 100%;
+  color: #36b0b9;
+  float: left;
+}
+
+#bigContactInfoContainerActive {
+  margin: 0.25rem 0.25rem 0.25rem 0.3rem;
+  padding: 1px;
+  background-color: #047a86;
+  -webkit-clip-path: polygon(0 10%, 3% 0, 100% 0, 100% 78%, 97% 90%, 3% 90%, 1% 100%, 0 100%);
+          clip-path: polygon(0 10%, 3% 0, 100% 0, 100% 78%, 97% 90%, 3% 90%, 1% 100%, 0 100%);
+}
+
+#bigContactInfoContainer {
+  margin: 0.25rem 0.25rem 0.25rem 0.3rem;
+  padding: 1px;
+}
+
+#contactInfoContainerActive {
+  padding: 1rem;
+  background-color: #1c1c13;
+  color: #2aa1ac;
+  -webkit-clip-path: polygon(0 10%, 3% 0, 100% 0, 100% 78%, 97% 90%, 3% 90%, 1% 100%, 0 100%);
+          clip-path: polygon(0 10%, 3% 0, 100% 0, 100% 78%, 97% 90%, 3% 90%, 1% 100%, 0 100%);
+}
+
+#contactInfoContainer {
+  border-bottom: 0.05em solid #047a86;
+  padding: 1rem;
+}
+
+#bigContactInfoContainer:hover {
+  background-color: #047a86;
+  -webkit-clip-path: polygon(0 10%, 3% 0, 100% 0, 100% 78%, 97% 90%, 3% 90%, 1% 100%, 0 100%);
+          clip-path: polygon(0 10%, 3% 0, 100% 0, 100% 78%, 97% 90%, 3% 90%, 1% 100%, 0 100%);
+}
+
+#contactInfoContainer:hover, #contactInfoContainerActive:hover {
+  background-color: #20201c;
+  color: #b4e6e4;
+  -webkit-clip-path: polygon(0 10%, 3% 0, 100% 0, 100% 78%, 97% 90%, 3% 90%, 1% 100%, 0 100%);
+          clip-path: polygon(0 10%, 3% 0, 100% 0, 100% 78%, 97% 90%, 3% 90%, 1% 100%, 0 100%);
+}
+
 #sidebarContainer {
   width: 30%;
   height: 100%;
