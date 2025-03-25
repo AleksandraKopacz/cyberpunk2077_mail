@@ -121,7 +121,8 @@ html {
           clip-path: polygon(0 10%, 3% 0, 100% 0, 100% 78%, 97% 90%, 3% 90%, 1% 100%, 0 100%);
 }
 
-#contactInfoContainer:hover, #contactInfoContainerActive:hover {
+#contactInfoContainer:hover,
+#contactInfoContainerActive:hover {
   background-color: #20201c;
   color: #b4e6e4;
   -webkit-clip-path: polygon(0 10%, 3% 0, 100% 0, 100% 78%, 97% 90%, 3% 90%, 1% 100%, 0 100%);
@@ -192,4 +193,8 @@ hr.divide {
 
 .fromto {
   color: #1a4748;
+}
+
+.icon {
+  vertical-align: middle;
 }/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,8 @@
 import Mail from "../data/mail.json";
-import { TbUser, TbUserHexagon, TbArrowBadgeLeft } from "react-icons/tb";
+import {
+  TbArrowBadgeLeft,
+  TbChevronRight,
+} from "react-icons/tb";
 import { Dispatch, SetStateAction } from "react";
 
 import "../css/style.css";
@@ -11,24 +14,19 @@ export default function Text({
   setShowContacts: Dispatch<SetStateAction<boolean>>;
   id: number;
 }) {
-
   return (
     <div id="mailContainer">
-        <TbArrowBadgeLeft onClick={() => setShowContacts(true)} />
+      <span onClick={() => setShowContacts(true)}>
+        <TbArrowBadgeLeft className="icon" size={15} />
+        <span>{Mail[id].from}</span>
+        <TbChevronRight size={15} className="icon" />
+        <span>{Mail[id].to}</span>
+      </span>
       <div id="data">
         <h2 className="mailTitle">{Mail[id].title}</h2>
-        <p>
-          <span className="fromto">Od:</span> <TbUser />{" "}
-          <span>{Mail[id].from}</span>
-        </p>
-        <p>
-          <span className="fromto">Do:</span> <TbUserHexagon />{" "}
-          <span>{Mail[id].to}</span>
-        </p>
         <hr className="divide" />
       </div>
-      <div id="content">{Mail[id].content}
-      </div>
+      <div id="content">{Mail[id].content}</div>
     </div>
   );
 }

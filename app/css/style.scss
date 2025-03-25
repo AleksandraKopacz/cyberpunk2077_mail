@@ -138,7 +138,8 @@ html {
     clip-path: polygon(0 10%, 3% 0, 100% 0, 100% 78%, 97% 90%, 3% 90%, 1% 100%, 0 100%);
 }
 
-#contactInfoContainer:hover, #contactInfoContainerActive:hover {
+#contactInfoContainer:hover,
+#contactInfoContainerActive:hover {
     background-color: $hover-box;
     color: $hover-text;
     clip-path: polygon(0 10%, 3% 0, 100% 0, 100% 78%, 97% 90%, 3% 90%, 1% 100%, 0 100%);
@@ -209,4 +210,9 @@ hr.divide {
 
 .fromto {
     color: $from-to;
+}
+
+// ALIGN ICONS
+.icon {
+    vertical-align: middle;
 }
